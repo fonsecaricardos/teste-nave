@@ -1,0 +1,64 @@
+@media (min-width: 576px) {
+    div .col-sm-3{
+        flex: 0 0 24%;
+        max-width: 20%;
+        margin: 20px;
+    }
+
+    @media (min-width: 767.98px) and (max-width: 1025px){
+        div .col-sm-3{
+            flex: 0 0 44%;
+            max-width: 50%;
+            margin: 20px;
+        }
+    }   
+}
+.col-sm-3{
+    height: 100px;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 16px;
+    border-radius: 15px;
+    box-shadow: 0 0 6px 1px rgba(188, 188, 188, 0.5);
+    color: #ffffff;
+}
+.visitors{
+    background-color: #29cb97;
+}
+
+.users{
+    background-color: #fec400;
+}
+
+.sales{
+    background-color: #4c84ff;
+}
+
+.orders{
+    background-color: #ca66ff;
+}
+
+strong{
+    width: 101px;
+    height: 33px;
+    font-family: Roboto;
+    font-size: 28px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+p {
+    width: 60px;
+    height: 23px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
