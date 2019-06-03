@@ -3,3 +3,11 @@
   height: 1024;
   background-color: #f4f4f4;  
 }
+
+.col-6{
+  border-radius: 15px;
+  box-shadow: 0 0 6px 1px rgba(188, 188, 188, 0.5);
+  background-color: #ffffff;
+  margin: auto;
+  max-height: auto;
+}

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Information from './components/Informations';
 import Sales from './components/Sales';
+import Reports from './components/Reports';
 import './App.css';
 
 class App extends Component {
@@ -11,8 +12,8 @@ class App extends Component {
       <div className="container">
         <Information />
         <div className="row">
-          <div className="col-6"><Sales /></div>
-          <div className="col-6"></div>
+          <div className="h-50 w-auto col-6 col-md-8"><Sales /></div>
+          <div className="w-auto col-6 col-md-4"><Reports /></div>
         </div>
       </div>
     );

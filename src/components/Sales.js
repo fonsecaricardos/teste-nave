@@ -8,35 +8,19 @@ let options = {
     title: {
         text: "Site Traffic Overview"
     },
-    series: [
-        {
-            allowPointSelect: true,
-            data: null,
-            type: "column"
-        }
-    ],
+    series: [{ allowPointSelect: true, data: null, type: "column" }],
     xAxis: {
         type: "category",
-        labels: {
-            style: {
-                fontSize: "13px",
-                fontFamily: "Verdana, sans-serif"
-            }
-        },
+        labels: { style: { fontSize: "13px", fontFamily: "Verdana, sans-serif" } },
         categories: []
     },
     yAxis: [
         {
             min: 0,
-            title: {
-                text: ""
-            }
+            title: { text: "" }
         },
         {
-            title: {
-                text: "",
-                align: "high",
-            },
+            title: { text: "", align: "high", },
         }
     ],
     credits: false
@@ -51,35 +35,32 @@ class Sales extends Component {
     loadSales() {
         const url = "http://localhost:3004/sales";
 
-        fetch(url)
-            .then(response => response.json())
-            .then(data => {
-                let newData = [];
+        fetch(url).then(response => response.json()).then(data => {
+            let newData = [];
 
-                for (let i = 0; i < data.length; i++) {
-                    newData.push({
-                        name: data[i].month,
-                        x: i,
-                        y: data[i].sales
-                    });
-                }
-                options.series[0].data = newData;
+            for (let i = 0; i < data.length; i++) {
+                newData.push({
+                    name: data[i].month,
+                    x: i,
+                    y: data[i].sales
+                });
+            }
+            options.series[0].data = newData;
 
-                this.setState({ data: newData });
-            });
+            this.setState({ data: newData });
+        });
     }
 
     render() {
         return (
             <div>
-                {this.state &&
-                    this.state.data && (
-                        <Chart
-                            options={options}
-                            highcharts={Highcharts}
-                            ref={"chart"}
-                        />
-                    )}
+                {this.state && this.state.data && (
+                    <Chart
+                        options={options}
+                        highcharts={Highcharts}
+                        ref={"chart"}
+                    />
+                )}
             </div>
         );
     }

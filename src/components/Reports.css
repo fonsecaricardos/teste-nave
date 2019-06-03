@@ -1,0 +1,35 @@
+h6 {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #6c6c6c;
+}
+
+.time{
+    color: rgba(108, 108, 108, 0.5);
+}
+
+h5 {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #6c6c6c;
+}
+
+.rounded-circle{
+    width: 35px;
+    height: 35px; 
+}
+
+.title {
+    font-weight: bold;
+    
+}
