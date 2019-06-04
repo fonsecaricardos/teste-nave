@@ -5,9 +5,18 @@
 }
 
 .col-6{
+  position: relative;
   border-radius: 15px;
   box-shadow: 0 0 6px 1px rgba(188, 188, 188, 0.5);
   background-color: #ffffff;
   margin: auto;
   max-height: auto;
+}
+
+@media (max-width: 576px) {
+  div .col-6{
+      flex: 0 0 100%;
+      max-width: 90%;
+      margin: 16px;
+  }
 }

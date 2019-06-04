@@ -27,7 +27,7 @@ class Reports extends Component {
             <div>
                 <div><h5 className="title">Reports</h5></div>
                 {this.state.data.map(report =>
-                    <article key={report.id}>
+                    <article key={report.id}> {/* eslint-disable-next-line */}
                         <img src={report.image} className="rounded-circle"></img>
                         <h5>{report.user}</h5>
                         <h6>{report.message}</h6>

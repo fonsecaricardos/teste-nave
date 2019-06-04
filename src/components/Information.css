@@ -22,7 +22,12 @@
     border-radius: 15px;
     box-shadow: 0 0 6px 1px rgba(188, 188, 188, 0.5);
     color: #ffffff;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .visitors{
     background-color: #29cb97;
 }
@@ -61,6 +66,9 @@ p {
     font-stretch: normal;
     line-height: normal;
     letter-spacing: normal;
+    display: inline-table;
+    text-align: right;
+    align-content: flex-end;
 }
 
 .icons{
